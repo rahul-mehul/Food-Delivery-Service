@@ -1,0 +1,109 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar : logo and image */
+#logo {
+    margin: 10px 40px;
+}
+
+#logo img {
+    margin: 3px 6px;
+    height: 60px;
+}
+
+/* Navigation Bar : list styling */
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 34px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('../bk.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+#home h1{
+    text-align: center;
+    color: white;
+    
+}
+
+#home p{
+text-align: center;
+color: white;
+font-size: 1rem;
+}
+
+
+/* Utlity Class */
+.h-primery{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+
+
+
+
+
