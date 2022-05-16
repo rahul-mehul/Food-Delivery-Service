@@ -3,20 +3,17 @@
     margin: 0;
     padding: 0;
 }
-
 /* CSS variables-------------------------------------------------------------------------- */
 
 :root {
     --navbar-height: 59px;
 }
-
-/* Navigation Bar ---------------------------------------------------------------------------*/
+/* Navigation Bar   ---------------------------------------------------------------------------*/
 #navbar {
     display: flex;
     align-items: center;
     position: absolute;
 }
-
 /* Navigation bar : logo and image-------------------------------------------------------- */
 #logo {
     margin: 10px 40px;
@@ -26,8 +23,7 @@
     margin: 3px 6px;
     height: 60px;
 }
-
-
+/* Navigation Bar list style */
 
 #navbar ul {
     display: flex;
@@ -41,7 +37,7 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: .5;
+    opacity: .4;
     top: 0;
     left: 0;
 }
@@ -68,12 +64,16 @@
     background-color: white;
 }
 
+
+
+
+
 /* Home Section----------------------------------------------------------------------  */
 #home {
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
-    height: 580px;
+    padding: 5px 200px;
+    height: 578px;
     justify-content: center;
     align-items: center;
 }
@@ -82,54 +82,48 @@
     content: "";
     position: absolute;
     background: url('../bk.jpg') no-repeat center center/cover;
-    height: 100%;
+    height: 90%;
     width: 100%;
     z-index: -1;
     opacity: .89;
+    top: 0;
+    left: 0;
 }
-
 #home h1 {
     text-align: center;
     color: white;
     font-family: 'Bree Serif', serif;
-
 }
-
 #home p {
     text-align: center;
     color: white;
-    font-size: 1rem;
+    font-size: 1.rem;
     font-family: 'Bree Serif', serif;
 }
+
+
+
 
 /* Services section--------------------------------------------------------------------------- */
 #services {
     margin: 34px;
     display: flex;
 }
-
 #services .box {
     border: 2px solid brown;
     padding: 34px;
     border-radius: 23px;
+    margin: 23px;
     background-color: antiquewhite;
-
-
-
 }
-
 #services .box img {
     display: block;
     height: 160px;
     margin: auto;
-
 }
-
 #services .box p {
     font-family: 'Bree Serif', serif;
 }
-
-
 
 /* Client Section ---------------------------------------------------------------*/
 #client-section{
@@ -143,12 +137,8 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: .4;
-
-
+    opacity: .3;
 }
-
-
 #clients{
     display: flex;
     justify-content: center;
@@ -172,36 +162,56 @@
     height: 100%;
     background: url('../contact.webp') no-repeat center center/cover;
     z-index: -1;
-    opacity: .4;
+    opacity: .7;
+    
 }
 #contact-box{
     display: flex;
     justify-content: center;
     align-items:center;
-    padding: 34px;
+    padding-bottom:  34px;
+    
 } 
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 25px;
+}
+#contact-box form{
+width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    }
+     
+
+
+
+
+
 /* Footer ------------------------------------------------------------------- */
 footer{
     background-color: black;
     color: white;
-    height: 50%;
+    height: 100%;
 }
 /* Utlity Class--------------------------------------------------------------- */
 .h-primary {
     font-family: 'Bree Serif', serif;
-    font-size: 50px;
+    font-size: 2.8rem;
     padding: 12px;}
 
     .h-secondery {
         font-family: 'Bree Serif', serif;
-        font-size:25px;
+        font: size 1.8rem;;
         padding: 12px;
     
     }
     
     .btn {
         padding: 6px 20px;
-        border: 2px solid rgb(203, 65, 65);
+        border: 2px solid white;
         background-color: rgb(40, 213, 27);
         color: black;
         border-radius: 20px;
@@ -211,6 +221,19 @@ footer{
     .center {
         text-align: center;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
